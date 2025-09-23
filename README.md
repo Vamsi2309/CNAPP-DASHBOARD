@@ -22,7 +22,7 @@ yarn install
 
 # Running the server 
 
-npm run dev
+yarn run dev
 # or
-yarn dev
+npm start
 ``` 
