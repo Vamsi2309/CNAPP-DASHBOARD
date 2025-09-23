@@ -19,7 +19,7 @@ const NavBar = () => {
           Home
         </Typography>
         <Typography className="text-base font-medium cursor-pointer"></Typography>
-        <Typography className="text-base font-bold text-black cursor-pointer">
+        <Typography className="text-base !font-bold text-black cursor-pointer">
           Dashboard V2
         </Typography>
       </Box>
@@ -32,6 +32,7 @@ const NavBar = () => {
           value={searchTerm}
           onChange={(e) => dispatch(setSearchTerm(e.target.value))}
           className="border-0 outline-none bg-transparent flex-1 text-sm"
+          style={{width:'300px'}}
         />
       </Box>
 

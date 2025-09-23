@@ -118,7 +118,7 @@ function RegistryScan({ data }: CSPMDashboardProps) {
               >
                 <Typography
                   variant="h6"
-                  className="font-bold text-[16px] text-[#333333] mb-2"
+                  className="!font-bold !text-[16px] !text-[#333333] mb-2"
                 >
                   {riskWidget.name}
                 </Typography>
@@ -139,7 +139,7 @@ function RegistryScan({ data }: CSPMDashboardProps) {
               >
                 <Typography
                   variant="h6"
-                  className="font-bold text-[16px] text-[#333333] mb-2"
+                  className="!font-bold !text-[16px] !text-[#333333] mb-2"
                 >
                   {securityWidget.name}
                 </Typography>

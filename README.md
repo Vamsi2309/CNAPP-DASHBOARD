@@ -6,7 +6,7 @@
 
 ### Adding a Widget
 
-If you want to add a widget, please add it to the **CWPP Dashboard** section.  
+If you want to add a widget, please add it to the **CWPP category** section.  
 In this section, there is no `chartType`, so for any new widget, the default `chartType` is set to `empty`.
 
 ---
