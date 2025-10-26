@@ -15,21 +15,20 @@ function DashBoard() {
     (state: RootState) => state.dashboard.searchTerm
   );
 
-  // Filter categories based on search term
   const filteredCategories = categories
-    .map((cat:Category) => ({
+    .map((cat: Category) => ({
       ...cat,
       widgets: cat.widgets.filter((w) =>
         w.name.toLowerCase().includes(searchValue.toLowerCase())
       ),
     }))
-    .filter((cat:Category) => cat.widgets.length > 0 || searchValue === "");
+    .filter((cat: Category) => cat.widgets.length > 0 || searchValue === "");
 
   return (
     <Box className="bg-[#f1f4f9]">
       <CnaDashboard />
 
-      {filteredCategories.map((cat:Category) => {
+      {filteredCategories.map((cat: Category) => {
         if (cat.id === "cnapp-dashboard") {
           return <CSPMDashboard key={cat.id} data={cat} />;
         }

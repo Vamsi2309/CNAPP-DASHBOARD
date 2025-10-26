@@ -14,7 +14,6 @@ const initialState: DashboardState = {
   searchTerm: "",
 };
 
-
 export const DashBoardSlice = createSlice({
   name: "dashboard",
   initialState,
